@@ -1,16 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep9.hospital.controller.AdminDashboardFormController">
+<AnchorPane prefHeight="352.0" prefWidth="600.0" style="-fx-background-color: lightgrey;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep9.hospital.controller.AdminDashboardFormController">
    <children>
-      <Label layoutX="177.0" layoutY="23.0" text="Admin Dashboard">
+      <Label layoutX="102.0" layoutY="14.0" text="MEDICARE CHANNELING CENTER">
          <font>
-            <Font name="Cantarell Bold" size="30.0" />
+            <Font name="Cantarell Bold" size="25.0" />
          </font>
       </Label>
+      <ImageView fitHeight="81.0" fitWidth="73.0" layoutX="516.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/MediCare.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="202.0" layoutY="79.0" text="ADMINSTRATOR">
+         <font>
+            <Font name="Cantarell Bold" size="25.0" />
+         </font>
+      </Label>
+      <VBox layoutX="155.0" layoutY="170.0" spacing="10.0">
+         <children>
+            <JFXButton fx:id="btnProfileManagement" onAction="#btnProfileManagement_OnAction" prefHeight="40.0" prefWidth="290.0" style="-fx-background-color: #2F4F4F; -fx-text-fill: white;" text="Profile Management">
+               <font>
+                  <Font name="Cantarell Regular" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnViewRecords" onAction="#btnViewRecords_OnAction" prefWidth="290.0" style="-fx-background-color: #2F4F4F; -fx-text-fill: white;" text="VIew Records">
+               <font>
+                  <Font name="Cantarell Regular" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnSettings" onAction="#btnSettingsOnAction" prefHeight="26.0" prefWidth="290.0" style="-fx-background-color: #2F4F4F; -fx-text-fill: white;" text="Settings">
+               <font>
+                  <Font name="Cantarell Regular" size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
    </children>
 </AnchorPane>

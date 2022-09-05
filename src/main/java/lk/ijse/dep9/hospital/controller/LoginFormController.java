@@ -12,7 +12,6 @@ import lk.ijse.dep9.hospital.misc.CryptoUtil;
 import lk.ijse.dep9.hospital.security.SecurityContextHolder;
 import lk.ijse.dep9.hospital.security.User;
 import lk.ijse.dep9.hospital.security.UserRole;
-
 import java.io.IOException;
 import java.sql.*;
 
@@ -57,7 +56,7 @@ public class LoginFormController {
              */
 
             /* PREPARED STATEMENT */
-            String sql = "SELECT role FROM User WHERE User.username=?";
+            String sql = "SELECT role, password FROM User WHERE username=?";
             PreparedStatement statement = connection.prepareStatement(sql);
             statement.setString(1,username);                    // parameter index starts with 1.
             //statement.setString(2,password);
