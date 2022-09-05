@@ -47,10 +47,19 @@ public class LoginFormController {
         Class.forName("com.mysql.cj.jdbc.Driver");
         try(Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital_system", "root", "pubuduSQL@123")) {
             //System.out.println(connection);
-            String sql = "SELECT role FROM User WHERE User.username='%s' AND User.password='%s'";
-            sql = String.format(sql,username,password);
-            Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery(sql);
+//            REGULAR STATEMENT
+//            String sql = "SELECT role FROM User WHERE User.username='%s' AND User.password='%s'";
+//            sql = String.format(sql,username,password);
+//            Statement statement = connection.createStatement();
+//            ResultSet resultSet = statement.executeQuery(sql);
+
+//          PREPARED STATEMENT
+            String sql = "SELECT role FROM User WHERE User.username=? AND User.password=?";
+            PreparedStatement statement = connection.prepareStatement(sql);
+            statement.setString(1,username);                    // parameter index starts with 1.
+            statement.setString(2,password);
+            ResultSet resultSet = statement.executeQuery();
+
             //System.out.println(resultSet);
             if (resultSet.next()) {
                 String role = resultSet.getString("role");
