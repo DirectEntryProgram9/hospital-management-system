@@ -8,14 +8,14 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="379.0" prefWidth="600.0" style="-fx-background-color: lightgrey;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep9.hospital.controller.SettingsFormController">
+<AnchorPane prefHeight="359.0" prefWidth="600.0" style="-fx-background-color: lightgrey;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep9.hospital.controller.SettingsFormController">
    <children>
-      <Label layoutX="229.0" layoutY="22.0" text="SETTINGS">
+      <Label alignment="CENTER" layoutX="229.0" layoutY="22.0" text="SETTINGS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
          <font>
             <Font name="Cantarell Bold" size="30.0" />
          </font>
       </Label>
-      <VBox layoutX="14.0" layoutY="76.0" prefHeight="155.0" prefWidth="204.0" spacing="30.0">
+      <VBox layoutX="14.0" layoutY="76.0" prefHeight="155.0" prefWidth="204.0" spacing="30.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="70.0">
          <children>
             <JFXButton fx:id="btnManagePrices" onAction="#btnManagePrices_OnAction" prefHeight="31.0" prefWidth="200.0" style="-fx-background-color: #2F4F4F; -fx-text-fill: white;" text="MANAGE PRICES">
                <font>
@@ -44,6 +44,6 @@
             </JFXButton>
          </children>
       </VBox>
-      <JFXTextArea fx:id="txtArea" layoutX="233.0" layoutY="76.0" prefHeight="275.0" prefWidth="354.0" style="-fx-background-color: white;" />
+      <JFXTextArea fx:id="txtArea" layoutX="233.0" layoutY="76.0" prefHeight="275.0" prefWidth="354.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="230.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="70.0" />
    </children>
 </AnchorPane>

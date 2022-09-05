@@ -10,22 +10,22 @@
 
 <AnchorPane prefHeight="352.0" prefWidth="600.0" style="-fx-background-color: lightgrey;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep9.hospital.controller.AdminDashboardFormController">
    <children>
-      <Label layoutX="102.0" layoutY="14.0" text="MEDICARE CHANNELING CENTER">
+      <Label alignment="CENTER" layoutX="102.0" layoutY="14.0" text="MEDICARE CHANNELING CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <font>
             <Font name="Cantarell Bold" size="25.0" />
          </font>
       </Label>
-      <ImageView fitHeight="81.0" fitWidth="73.0" layoutX="516.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="81.0" fitWidth="73.0" layoutX="516.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
          <image>
             <Image url="@../image/MediCare.png" />
          </image>
       </ImageView>
-      <Label layoutX="202.0" layoutY="79.0" text="ADMINSTRATOR">
+      <Label alignment="CENTER" layoutX="202.0" layoutY="79.0" text="ADMINSTRATOR" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <font>
             <Font name="Cantarell Bold" size="25.0" />
          </font>
       </Label>
-      <VBox layoutX="155.0" layoutY="170.0" spacing="10.0">
+      <VBox alignment="CENTER" layoutX="155.0" layoutY="170.0" spacing="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
             <JFXButton fx:id="btnProfileManagement" onAction="#btnProfileManagement_OnAction" prefHeight="40.0" prefWidth="290.0" style="-fx-background-color: #2F4F4F; -fx-text-fill: white;" text="Profile Management">
                <font>
